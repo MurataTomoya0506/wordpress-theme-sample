@@ -15,13 +15,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <aside class="col-4"role="aside">
-		<div class ="">
+		<div class ="pt-2">
 			<h4>月次アーカイブ</h4>
 			<ul class="">
 				<?php echo wp_get_archives("type-monthly&snow_post_count=teue"); ?>
 			</ul>
 		</div>
-		<div class ="">
+		<div class ="pt-2">
 			<h4>カテゴリーアーカイブ</h4>
 			<?php $categories = get_categories(); ?>
 			<ul class="">
@@ -30,5 +30,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<a href="#"><?php echo $category->name ?></a>
 			</li>
 			<?php endforeach; ?>
+				</ul>
 		</div>
 	</aside>
